@@ -1,11 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./tailwind.config.css">
+
+
 </head>
+
 <body>
-    Hello World
+    <header class="bg-[#1A0B2E]">
+
+        <nav class="border-b border-[#412567]">
+
+            <div class="mx-[200px] pt-4 mb-4 flex justify-between items-center">
+                <div class="w-[219px] h-8 hover:animate-pulse cursor-pointer"><img src="./assets/TechWave.png" alt=""></div>
+                <div class="flex justify-center gap-8 text-[#ffffffad] text-base font-medium">
+                    <a href="">About</a>
+                    <a href="">Episodes</a>
+                    <a href="">Host</a>
+                </div>
+                <button
+                    class="w-[135px] h-11 py-3 px-4 flex justify-between items-center gap-1 text-[#ffffff]  bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-full 
+                            transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_0_20px_rgba(251,9,180,0.4)] active:scale-95 cursor-pointer">Subscribe
+
+                    <div
+                        class=" w-5 h-5 flex justify-center items-center transition-transform duration-300 group-hover:translate-x-1">
+                        <img src="./assets/ArrowRight.png" alt="">
+                    </div>
+                </button>
+            </div>
+
+        </nav>
+
+
+        <section
+            class="Banner h-[760px] bg-[url('/assets/hero-bg.png')] bg-cover bg-no-repeat bg-center flex justify-center items-center">
+
+            <div class="banner-content flex flex-col justify-between items-center gap-10 w-[550px]">
+
+                <div
+                    class="image-part relative bg-[url('/assets/hero-circle.png')] bg-no-repeat bg-center bg-cover rounded-full w-[350px] h-[350px] flex flex-col justify-center items-center animate-float">
+                    <div class="w-[200px] h-[200px] flex justify-center items-center"><img src="./assets/microphone.png"
+                            alt=""></div>
+                    <div
+                        class="absolute top-2 right-8 px-4 py-2 rounded-full bg-[#00FF88] text-[#1A0B2E] font-semibold text-[18px] drop-shadow-[0_10px_10px_rgba(0,255,136,0.5)] animate-glow">
+                        NEW</div>
+                </div>
+
+                <div class="text-part flex flex-col justify-between gap-6">
+                    <div class="para flex flex-col justify-between gap-2">
+                        <h1 class="text-[60px] text-[#ffffff] font-extrabold text-center">TechWave</h1>
+                        <p class="text-base text-[rgba(255,255,255,.8)] font-normal">Your daily dose of tech insights,
+                            productivity hacks, and personal growth</p>
+                    </div>
+                    <div class="buttons mx-auto flex gap-2">
+                        <button
+                            class="flex justify-center items-center gap-2 px-5 py-3 text-[#ffffff] bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-full 
+                            transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_0_20px_rgba(251,9,180,0.4)] active:scale-95 cursor-pointer">
+                            <div><img src="./assets/spotify.png" alt=""></div> Listen on Spotify
+                        </button>
+                        <button class="flex justify-center items-center gap-2 px-5 py-3 text-[#00FF88] text-base font-semibold border border-[#00FF88] rounded-full 
+                            transition-all duration-300 ease-in-out hover:bg-[#00FF88]/10 hover:shadow-[0_0_15px_rgba(0,255,136,0.5)] active:scale-95 cursor-pointer">
+                            <div><img src="./assets/message.png" alt=""></div> Subscribe
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </header>
+
+
+
+    <main>
+        <section class="About px-[200px] pt-[50px] pb-[120px] bg-[#1A0B2E]">
+
+            <div class="para flex flex-col items-center justify-center text-center gap-4  mx-[200px] mb-20">
+                <h1 class="text-[48px] text-[#ffffff] font-bold">About The Podcast</h1>
+                <div class="text-base text-[#ffffffbb] font-normal">
+                    TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.<br>We break
+                    down complex topics into digestible insights, explore productivity strategies that actually
+                    work,<br>and share stories of personal growth from industry leaders.<br> <br>Join thousands of young
+                    professionals and tech enthusiasts who start their day with TechWave.
+                </div>
+            </div>
+
+            <hr class="border-t border-[#ffffff25]">
+
+            <div class="info-container mt-20 flex justify-between items-center gap-20">
+
+                <div class="info w-60  flex flex-col items-center gap-4 ">
+                    <h1 class="text-[48px] font-black text-[#00FF88]">150K+</h1>
+                    <p class="text-base text-[#ffffffad] font-normal">MONTHLY LISTENERS</p>
+                </div>
+                <div class="info w-60  flex flex-col items-center gap-4 ">
+                    <h1 class="text-[48px] font-black text-[#00FF88]">200+</h1>
+                    <p class="text-base text-[#ffffffad] font-normal">EPISODES PUBLISHED</p>
+                </div>
+                <div class="info w-60  flex flex-col items-center gap-4 ">
+                    <h1 class="text-[48px] font-black text-[#00FF88]">4.9★</h1>
+                    <p class="text-base text-[#ffffffad] font-normal">AVERAGE RATING</p>
+                </div>
+                <div class="info w-60  flex flex-col items-center gap-4 ">
+                    <h1 class="text-[48px] font-black text-[#00FF88]">50+</h1>
+                    <p class="text-base text-[#ffffffad] font-normal">INDUSTRY EXPERTS</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="choose px-[200px] py-[120px] bg-[#230E3D] flex flex-col gap-10">
+
+            <h1 class="text-[48px] text-[#ffffff] font-bold text-center ">Why Choose TechWave</h1>
+            <div class="features_card grid grid-cols-3 grid-rows-3 gap-[30px]">
+
+                <div
+                    class="card px-10 py-[108px] bg-[rgba(53,17,101,0.4)] rounded-[40px] row-span-2 flex flex-col justify-center gap-4 hover-wiggle">
+                    <div class="w-[60px] h-[60px] flex justify-center items-center"><img src="./assets/headphone.png"
+                            alt=""></div>
+                    <h3 class="text-[24px] font-bold text-[#ffffff]">Premium Audio Quality</h3>
+                    <p class="text-base text-[#ffffff94]">Experience crystal-clear sound with professional-grade
+                        recording equipment and expert audio engineering. Every episode is mastered for optimal
+                        listening across all devices and platforms.</p>
+                </div>
+                <div class="card col-span-2 p-10 bg-[rgba(53,17,101,0.4)] rounded-[40px]  flex flex-col gap-4 hover-wiggle">
+                    <div class="w-[60px] h-[60px] flex justify-center items-center"><img src="./assets/device.png"
+                            alt=""></div>
+                    <h3 class="text-[24px] font-bold text-[#ffffff]">Mobile Friendly</h3>
+                    <p class="text-base text-[#ffffff94]">Listen on the go with seamless mobile experience and offline
+                        downloads./p>
+                </div>
+                <div class="card col-span-2 p-10 bg-[rgba(53,17,101,0.4)] rounded-[40px]  flex flex-col gap-4 hover-wiggle">
+                    <div class="w-[60px] h-[60px] flex justify-center items-center"><img src="./assets/location.png"
+                            alt=""></div>
+                    <h3 class="text-[24px] font-bold text-[#ffffff]">Global Community</h3>
+                    <p class="text-base text-[#ffffff94]">Connect with tech enthusiasts from over 120 countries
+                        worldwide.</p>
+                </div>
+                <div class="card col-span-2 p-10 bg-[rgba(53,17,101,0.4)] rounded-[40px]  flex flex-col gap-4 hover-wiggle">
+                    <div class="w-[60px] h-[60px] flex justify-center items-center"><img src="./assets/zap-fast.png"
+                            alt=""></div>
+                    <h3 class="text-[24px] font-bold text-[#ffffff]">Exclusive Interviews</h3>
+                    <p class="text-base text-[#ffffff94]">Get unprecedented access to industry titans, startup founders,
+                        and tech visionaries. Our host secures exclusive conversations you won't find anywhere else,
+                        diving deep into their journeys, failures, and success strategies.</p>
+                </div>
+                <div class="card p-10 bg-[rgba(53,17,101,0.4)] rounded-[40px] flex flex-col gap-4 hover-wiggle">
+                    <div class="w-[60px] h-[60px] flex justify-center items-center"><img src="./assets/resource.png"
+                            alt=""></div>
+                    <h3 class="text-[24px] font-bold text-[#ffffff]">Rich Resources</h3>
+                    <p class="text-base text-[#ffffff94]">Access show notes, transcripts, and additional learning
+                        materials for every episode.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="Episodes px-[200px] py-[120px] bg-[#1A0B2E] flex flex-col gap-[120px] ">
+
+            <div class="featured flex flex-col gap-10">
+
+                <h1 class="text-[48px] text-[#ffffff] font-bold text-center">
+                    Featured Episodes
+                </h1>
+
+                <div class="video-container grid grid-cols-3 gap-[30px] items-stretch">
+
+                    <div class="video">
+
+                        <div class="relative w-full aspect-video overflow-hidden rounded-t-[40px]">
+                            <iframe class="absolute inset-0 h-full w-full"
+                                src="https://www.youtube.com/embed/fa8k8IQ1_X0?si=4TEK5Ae-c69EV1Bg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+
+
+                        <div class="vid-info p-6 flex grow flex-col gap-3 bg-[rgba(37,13,68,1)] rounded-b-[40px]">
+                            <h2 class="text-[24px] font-bold text-[#ffffff]">The Future of AI in Everyday Life</h2>
+                            <p class="text-base text-[rgba(255,255,255,0.6)] font-normal">Exploring how artificial
+                                intelligence is transforming our daily routines and what to
+                                expect in the next decade.</p>
+                            <div
+                                class="time text-base font-semibold text-[rgba(0,255,136,1)] flex items-center gap-1.5">
+                                <div><img src="./assets/clock.png" alt=""></div>42 min
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video">
+
+                        <div class="relative w-full aspect-video overflow-hidden rounded-t-[40px]">
+                            <iframe class="absolute inset-0 h-full w-full"
+                                src="https://www.youtube.com/embed/ObA4ne4TVsE?si=bCavu6KlKXnJb3TX"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <div class="vid-info p-6 flex flex-col grow gap-3 bg-[rgba(37,13,68,1)] rounded-b-[40px]">
+                            <h2 class="text-[24px] font-bold text-[#ffffff]">Building Better Habits for Remote Work</h2>
+                            <p class="grow text-base text-[rgba(255,255,255,0.6)] font-normal">Practical strategies for
+                                staying productive and maintaining work-life balance in a remote
+                                environment.</p>
+                            <div
+                                class="time text-base font-semibold text-[rgba(0,255,136,1)] flex items-center gap-1.5">
+                                <div><img src="./assets/clock.png" alt=""></div>35 min
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video">
+
+                        <div class="relative w-full aspect-video overflow-hidden rounded-t-[40px]">
+                            <iframe class="absolute inset-0 h-full w-full"
+                                src="https://www.youtube.com/embed/fZmQ_aPXJAM?si=YvQh8t9qtR99H1jR"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <div class="vid-info p-6 flex flex-col grow gap-3 bg-[rgba(37,13,68,1)] rounded-b-[40px]">
+                            <h2 class="text-[24px] font-bold text-[#ffffff]">Career Growth in Tech: A Roadmap</h2>
+                            <p class=" grow text-base text-[rgba(255,255,255,0.6)] font-normal">Expert advice on
+                                navigating
+                                your tech career from junior developer to senior leadership
+                                roles.</p>
+                            <div
+                                class="time text-base font-semibold text-[rgba(0,255,136,1)] flex items-center gap-1.5">
+                                <div><img src="./assets/clock.png" alt=""></div>51 min
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="host flex flex-col gap-10">
+
+                <h2 class="text-[48px] text-[#ffffff] font-bold text-center">Meet the Host</h2>
+
+                <div class="host-info bg-[rgba(53,17,101,0.4)] rounded-[40px] p-10 flex gap-6">
+
+                    <div class="w-[200px] h-[200px] flex shrink-0">
+                        <img class="w-full h-full object-cover" src="./assets/host.png" alt="">
+                    </div>
+                    <div class="para flex flex-col gap-4">
+                        <h3 class="text-[32px] text-[#ffffff] font-bold">Alex Kumar</h3>
+                        <p class="text-base text-[rgba(255,255,255,0.6)] font-normal">Tech entrepreneur, productivity
+                            expert, and lifelong learner. Alex has been in the tech
+                            industry for over 10 years, working with startups and Fortune 500 companies. Through
+                            TechWave, Alex shares insights from industry leaders and practical advice for anyone looking
+                            to grow in tech.</p>
+                        <div class="social flex gap-2 ">
+                            <div
+                                class="icon w-10 h-10 flex justify-center items-center border rounded-full border-[rgba(83,60,114,1)]">
+                                <img src="./assets/linkedin.png" alt="">
+                            </div>
+                            <div
+                                class="icon w-10 h-10 flex justify-center items-center border rounded-full border-[rgba(83,60,114,1)]">
+                                <img src="./assets/x.png" alt="">
+                            </div>
+                            <div
+                                class="icon w-10 h-10 flex justify-center items-center border rounded-full border-[rgba(83,60,114,1)]">
+                                <img src="./assets/instagram.png" alt="">
+                            </div>
+                            <div
+                                class="icon w-10 h-10 flex justify-center items-center border rounded-full border-[rgba(83,60,114,1)]">
+                                <img src="./assets/youtube.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="bg-[url('./assets/footer-bg.png')] bg-no-repeat bg-center bg-cover p-[120px]">
+
+        <div class="flex flex-col items-center text-center gap-8">
+            <div class="logo"><img src="./assets/TechWave footer.png" alt=""></div>
+
+            <div class="links flex justify-between gap-10 ">
+
+                <div class="flex justify-center items-center gap-2">
+                    <div class="icon w-6 h-6 flex justify-center items-center"><img src="./assets/spotify.png" alt="">
+                    </div>
+                    <div class="name text-base text-[rgba(255,255,255,0.6)] font-medium">Spotify</div>
+                </div>
+                <div class="flex justify-center items-center gap-2">
+                    <div class="icon w-6 h-6 flex justify-center items-center"><img src="./assets/apple-podcast.png"
+                            alt=""></div>
+                    <div class="name text-base text-[rgba(255,255,255,0.6)] font-medium">Apple Podcasts</div>
+                </div>
+                <div class="flex justify-center items-center gap-2">
+                    <div class="icon w-6 h-6 flex justify-center items-center"><img src="./assets/youtube-podcast.png"
+                            alt=""></div>
+                    <div class="name text-base text-[rgba(255,255,255,0.6)] font-medium">YouTube</div>
+                </div>
+                <div class="flex justify-center items-center gap-2">
+                    <div class="icon w-6 h-6 flex justify-center items-center"><img src="./assets/twitter.png" alt="">
+                    </div>
+                    <div class="name text-base text-[rgba(255,255,255,0.6)] font-medium">Twitter</div>
+                </div>
+            </div>
+
+            <div class="copy text-base text-[rgba(255,255,255,0.6)] font-normal">© 2026 TechWave Podcast. All rights
+                reserved.</div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
