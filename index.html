@@ -41,35 +41,43 @@
 
 
         <section
-            class="Banner h-[760px] bg-[url('./assets/hero-bg.png')] bg-cover bg-no-repeat bg-center flex justify-center items-center">
+            class="Banner h-[500px] sm:h-[600px] lg:h-[760px] bg-[url('./assets/hero-bg.png')] bg-cover bg-no-repeat bg-center flex justify-center items-center px-5">
 
-            <div class="banner-content flex flex-col justify-between items-center gap-10 w-[550px]">
+            <div
+                class="banner-content flex flex-col justify-between items-center gap-6 sm:gap-8 lg:gap-10 w-full max-w-[550px]">
 
                 <div
-                    class="image-part relative bg-[url('./assets/hero-circle.png')] bg-no-repeat bg-center bg-cover rounded-full w-[350px] h-[350px] flex flex-col justify-center items-center animate-float">
-                    <div class="w-[200px] h-[200px] flex justify-center items-center"><img src="./assets/microphone.png"
-                            alt=""></div>
+                    class="image-part relative bg-[url('./assets/hero-circle.png')] bg-no-repeat bg-center bg-cover rounded-full w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] lg:w-[350px] lg:h-[350px] flex flex-col justify-center items-center animate-float">
                     <div
-                        class="absolute top-2 right-8 px-4 py-2 rounded-full bg-[#00FF88] text-[#1A0B2E] font-semibold text-[18px] drop-shadow-[0_10px_10px_rgba(0,255,136,0.5)] animate-glow">
+                        class="mic w-[120px] h-[120px] sm:w-[160px] sm:h-[160px] lg:w-[200px] lg:h-[200px] flex justify-center items-center">
+                        <img src="./assets/microphone.png" alt="" class="w-full h-full object-contain">
+                    </div>
+                    <div
+                        class="absolute top-1 right-4 sm:top-2 sm:right-8  px-3 py-1 sm:px-4 sm:py-2  rounded-full bg-[#00FF88] text-[#1A0B2E] font-semibold text-sm sm:text-base lg:text-[18px] drop-shadow-[0_10px_10px_rgba(0,255,136,0.5)] animate-glow">
                         NEW</div>
                 </div>
 
-                <div class="text-part flex flex-col justify-between gap-6">
+                <div class="text-part flex flex-col justify-between gap-4 sm:gap-5 lg:gap-6">
                     <div class="para flex flex-col justify-between gap-2">
-                        <h1 class="text-[60px] text-[#ffffff] font-extrabold text-center">TechWave</h1>
-                        <p class="text-base text-[rgba(255,255,255,.8)] font-normal">Your daily dose of tech insights,
+                        <h1 class="text-4xl sm:text-5xl lg:text-[60px] text-[#ffffff] font-extrabold text-center">
+                            TechWave</h1>
+                        <p
+                            class="text-sm sm:text-base text-[rgba(255,255,255,.8)] font-normal text-center px-4 sm:px-0">
+                            Your daily dose of tech insights,
                             productivity hacks, and personal growth</p>
                     </div>
-                    <div class="buttons mx-auto flex gap-2">
+                    <div class="buttons mx-auto flex gap-2 w-full sm:w-auto justify-center  px-4 sm:px-0">
                         <button
-                            class="flex justify-center items-center gap-2 px-5 py-3 text-[#ffffff] bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-full 
+                            class="flex justify-center items-center gap-2 px-4 sm:px-5 py-3 text-sm sm:text-base text-[#ffffff] bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-full 
                             transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_0_20px_rgba(251,9,180,0.4)] active:scale-95 cursor-pointer">
-                            <div><img src="./assets/spotify.png" alt=""></div> Listen on Spotify
+                            <div class="w-5 h-5"><img src="./assets/spotify.png" alt=""
+                                    class="w-full h-full object-contain"></div> Listen on Spotify
                         </button>
                         <button
-                            class="flex justify-center items-center gap-2 px-5 py-3 text-[#00FF88] text-base font-semibold border border-[#00FF88] rounded-full 
+                            class="flex justify-center items-center gap-2 px-4 sm:px-5 py-3 text-sm sm:text-base text-[#00FF88] font-semibold border border-[#00FF88] rounded-full 
                             transition-all duration-300 ease-in-out hover:bg-[#00FF88]/10 hover:shadow-[0_0_15px_rgba(0,255,136,0.5)] active:scale-95 cursor-pointer">
-                            <div><img src="./assets/message.png" alt=""></div> Subscribe
+                            <div class="w-5 h-5"><img src="./assets/message.png" alt=""
+                                    class="w-full h-full object-contain"></div> Subscribe
                         </button>
                     </div>
                 </div>
@@ -83,85 +91,110 @@
 
 
     <main>
-        <section class="About px-auto pt-[50px] pb-[120px] bg-[#1A0B2E]">
+        <section class="About px-5 pt-8 sm:pt-10 lg:pt-[50px] pb-16 sm:pb-20 lg:pb-[120px] bg-[#1A0B2E]">
 
-            <div class="para flex flex-col items-center justify-center text-center gap-4  mx-[200px] mb-20">
-                <h1 class="text-[48px] text-[#ffffff] font-bold">About The Podcast</h1>
-                <div class="text-base text-[#ffffffbb] font-normal">
-                    TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.<br>We break
-                    down complex topics into digestible insights, explore productivity strategies that actually
-                    work,<br>and share stories of personal growth from industry leaders.<br> <br>Join thousands of young
-                    professionals and tech enthusiasts who start their day with TechWave.
+            <div
+                class="para flex flex-col items-center justify-center text-center gap-3 sm:gap-4 mx-auto max-w-4xl mb-12 sm:mb-16 lg:mb-20">
+                <h1 class="text-3xl sm:text-4xl lg:text-[48px] text-[#ffffff] font-bold">About The Podcast</h1>
+                <div class="text-sm sm:text-base  text-[#ffffffbb] font-normal">
+                    <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break
+                        down complex topics into digestible insights, explore productivity strategies that actually
+                        work, and share stories of personal growth from industry leaders.<br><br>
+                        Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
+                    </p>
                 </div>
             </div>
 
             <hr class="border-t border-[#ffffff25]">
 
-            <div class="info-container mt-20 flex justify-between items-center gap-20">
+            <div
+                class="info-container mt-12 sm:mt-16 lg:mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 lg:20 max-w-6xl mx-auto">
 
-                <div class="info w-60  flex flex-col items-center gap-4 ">
-                    <h1 class="text-[48px] font-black text-[#00FF88]">150K+</h1>
-                    <p class="text-base text-[#ffffffad] font-normal">MONTHLY LISTENERS</p>
+                <div class="info  flex flex-col items-center gap-2 sm:gap-3 lg:gap-4 ">
+                    <h1 class="font-black text-3xl sm:text-4xl lg:text-[48px] text-[#00FF88]">150K+</h1>
+                    <p class="text-xs sm:text-sm lg:text-base  text-[#ffffffad] text-center font-normal">MONTHLY
+                        LISTENERS</p>
                 </div>
-                <div class="info w-60  flex flex-col items-center gap-4 ">
-                    <h1 class="text-[48px] font-black text-[#00FF88]">200+</h1>
-                    <p class="text-base text-[#ffffffad] font-normal">EPISODES PUBLISHED</p>
+                <div class="info  flex flex-col items-center gap-2 sm:gap-3 lg:gap-4 ">
+                    <h1 class="font-black text-3xl sm:text-4xl lg:text-[48px] text-[#00FF88]">200+</h1>
+                    <p class="text-xs sm:text-sm lg:text-base  text-[#ffffffad] text-center font-normal">EPISODES
+                        PUBLISHED</p>
                 </div>
-                <div class="info w-60  flex flex-col items-center gap-4 ">
-                    <h1 class="text-[48px] font-black text-[#00FF88]">4.9★</h1>
-                    <p class="text-base text-[#ffffffad] font-normal">AVERAGE RATING</p>
+                <div class="info  flex flex-col items-center gap-2 sm:gap-3 lg:gap-4 ">
+                    <h1 class="font-black text-3xl sm:text-4xl lg:text-[48px] text-[#00FF88]">4.9★</h1>
+                    <p class="text-xs sm:text-sm lg:text-base  text-[#ffffffad] text-center font-normal">AVERAGE RATING
+                    </p>
                 </div>
-                <div class="info w-60  flex flex-col items-center gap-4 ">
-                    <h1 class="text-[48px] font-black text-[#00FF88]">50+</h1>
-                    <p class="text-base text-[#ffffffad] font-normal">INDUSTRY EXPERTS</p>
+                <div class="info  flex flex-col items-center gap-2 sm:gap-3 lg:gap-4 ">
+                    <h1 class="font-black text-3xl sm:text-4xl lg:text-[48px] text-[#00FF88]">50+</h1>
+                    <p class="text-xs sm:text-sm lg:text-base  text-[#ffffffad] text-center font-normal">INDUSTRY
+                        EXPERTS</p>
                 </div>
             </div>
 
         </section>
 
 
-        <section class="choose px-auto py-[120px] bg-[#230E3D] flex flex-col gap-10">
+        <section class="choose px-5 py-16 sm:py-20 lg:py-[120px] bg-[#230E3D] flex flex-col gap-6 sm:gap-8 lg:gap-10">
 
-            <h1 class="text-[48px] text-[#ffffff] font-bold text-center ">Why Choose TechWave</h1>
-            <div class="features_card grid grid-cols-3 grid-rows-3 gap-[30px]">
+            <h1 class="text-3xl sm:text-4xl lg:text-[48px] text-[#ffffff] font-bold text-center ">Why Choose TechWave
+            </h1>
+
+            <div
+                class="features_card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3 gap-5 sm:gap-6 lg:gap-[30px] max-w-7xl mx-auto">
 
                 <div
-                    class="card px-10 py-[108px] bg-[rgba(53,17,101,0.4)] rounded-[40px] row-span-2 flex flex-col justify-center gap-4 hover-wiggle">
-                    <div class="w-[60px] h-[60px] flex justify-center items-center"><img src="./assets/headphone.png"
-                            alt=""></div>
+                    class="card px-6 sm:px-8 lg:px-10 py-8 sm:py-12 lg:py-[108px] bg-[rgba(53,17,101,0.4)] rounded-3xl lg:rounded-[40px] lg:row-span-2 flex flex-col justify-center gap-3 sm:gap-4 hover-wiggle">
+
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-[60px] lg:h-[60px] flex justify-center items-center">
+                        <img src="./assets/headphone.png" alt="" class="w-full h-full object-contain">
+                    </div>
+
                     <h3 class="text-[24px] font-bold text-[#ffffff]">Premium Audio Quality</h3>
                     <p class="text-base text-[#ffffff94]">Experience crystal-clear sound with professional-grade
                         recording equipment and expert audio engineering. Every episode is mastered for optimal
                         listening across all devices and platforms.</p>
                 </div>
                 <div
-                    class="card col-span-2 p-10 bg-[rgba(53,17,101,0.4)] rounded-[40px]  flex flex-col gap-4 hover-wiggle">
-                    <div class="w-[60px] h-[60px] flex justify-center items-center"><img src="./assets/device.png"
-                            alt=""></div>
+                    class="card lg:col-span-2 p-6 sm:p-8 lg:p-10 bg-[rgba(53,17,101,0.4)] rounded-3xl lg:rounded-[40px] flex flex-col gap-3 sm:gap-4 hover-wiggle">
+
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-[60px] lg:h-[60px] flex justify-center items-center">
+                        <img src="./assets/device.png" alt="" class="w-full h-full object-contain">
+                    </div>
                     <h3 class="text-[24px] font-bold text-[#ffffff]">Mobile Friendly</h3>
                     <p class="text-base text-[#ffffff94]">Listen on the go with seamless mobile experience and offline
                         downloads./p>
                 </div>
                 <div
-                    class="card col-span-2 p-10 bg-[rgba(53,17,101,0.4)] rounded-[40px]  flex flex-col gap-4 hover-wiggle">
-                    <div class="w-[60px] h-[60px] flex justify-center items-center"><img src="./assets/location.png"
-                            alt=""></div>
+                    class="card lg:col-span-2 p-6 sm:p-8 lg:p-10 bg-[rgba(53,17,101,0.4)] rounded-3xl lg:rounded-[40px] flex flex-col gap-3 sm:gap-4 hover-wiggle">
+
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-[60px] lg:h-[60px] flex justify-center items-center">
+                        <img src="./assets/location.png" alt="" class="w-full h-full object-contain">
+                    </div>
+                    
                     <h3 class="text-[24px] font-bold text-[#ffffff]">Global Community</h3>
                     <p class="text-base text-[#ffffff94]">Connect with tech enthusiasts from over 120 countries
                         worldwide.</p>
                 </div>
                 <div
-                    class="card col-span-2 p-10 bg-[rgba(53,17,101,0.4)] rounded-[40px]  flex flex-col gap-4 hover-wiggle">
-                    <div class="w-[60px] h-[60px] flex justify-center items-center"><img src="./assets/zap-fast.png"
-                            alt=""></div>
+                    class="card lg:col-span-2 p-6 sm:p-8 lg:p-10 bg-[rgba(53,17,101,0.4)] rounded-3xl lg:rounded-[40px] flex flex-col gap-3 sm:gap-4 hover-wiggle">
+
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-[60px] lg:h-[60px] flex justify-center items-center">
+                        <img src="./assets/zap-fast.png" alt="" class="w-full h-full object-contain">
+                    </div>
+
                     <h3 class="text-[24px] font-bold text-[#ffffff]">Exclusive Interviews</h3>
                     <p class="text-base text-[#ffffff94]">Get unprecedented access to industry titans, startup founders,
                         and tech visionaries. Our host secures exclusive conversations you won't find anywhere else,
                         diving deep into their journeys, failures, and success strategies.</p>
                 </div>
-                <div class="card p-10 bg-[rgba(53,17,101,0.4)] rounded-[40px] flex flex-col gap-4 hover-wiggle">
-                    <div class="w-[60px] h-[60px] flex justify-center items-center"><img src="./assets/resource.png"
-                            alt=""></div>
+                <div
+                    class="card p-6 sm:p-8 lg:p-10 bg-[rgba(53,17,101,0.4)] rounded-3xl lg:rounded-[40px] flex flex-col gap-3 sm:gap-4 hover-wiggle">
+
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-[60px] lg:h-[60px] flex justify-center items-center">
+                        <img src="./assets/resource.png" alt="" class="w-full h-full object-contain">
+                    </div>
+
                     <h3 class="text-[24px] font-bold text-[#ffffff]">Rich Resources</h3>
                     <p class="text-base text-[#ffffff94]">Access show notes, transcripts, and additional learning
                         materials for every episode.</p>
