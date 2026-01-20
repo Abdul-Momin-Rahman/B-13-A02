@@ -15,17 +15,18 @@
 <body>
     <header class="bg-[#1A0B2E]">
 
-        <nav class="border-b border-[#412567]">
+        <nav class="nav-wrapper border-b border-[#412567]">
 
-            <div class="mx-[200px] pt-4 mb-4 flex justify-between items-center">
-                <div class="w-[219px] h-8 hover:animate-pulse cursor-pointer"><img src="./assets/TechWave.png" alt=""></div>
-                <div class="flex justify-center gap-8 text-[#ffffffad] text-base font-medium">
-                    <a href="">About</a>
-                    <a href="">Episodes</a>
-                    <a href="">Host</a>
+            <div class="mx-5 sm:mx-12 md:mx-20 lg:mx-[200px] pt-4 mb-4 flex justify-between items-center">
+                <div class="w-32 sm:w-40 md:w-48 lg:w-[219px] h-6 sm:h-7 lg:h-8 hover:animate-pulse cursor-pointer"><img
+                        src="./assets/TechWave.png" alt=""></div>
+                <div class="nav-links hidden lg:flex justify-center gap-8 text-[#ffffffad] text-base font-medium">
+                    <a href="#" class="hover:text-white transition-colors">About</a>
+                    <a href="#" class="hover:text-white transition-colors">Episodes</a>
+                    <a href="#" class="hover:text-white transition-colors">Host</a>
                 </div>
                 <button
-                    class="w-[135px] h-11 py-3 px-4 flex justify-between items-center gap-1 text-[#ffffff]  bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-full 
+                    class="nav-btn hidden md:flex w-[135px] h-11 py-3 px-4  justify-between items-center gap-1 text-[#ffffff]  bg-linear-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-full 
                             transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_0_20px_rgba(251,9,180,0.4)] active:scale-95 cursor-pointer">Subscribe
 
                     <div
@@ -33,6 +34,7 @@
                         <img src="./assets/ArrowRight.png" alt="">
                     </div>
                 </button>
+                <div class="hidden max-md:flex"><img src="./assets/hamburger-menu.png" alt=""></div>
             </div>
 
         </nav>
@@ -64,7 +66,8 @@
                             transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_0_20px_rgba(251,9,180,0.4)] active:scale-95 cursor-pointer">
                             <div><img src="./assets/spotify.png" alt=""></div> Listen on Spotify
                         </button>
-                        <button class="flex justify-center items-center gap-2 px-5 py-3 text-[#00FF88] text-base font-semibold border border-[#00FF88] rounded-full 
+                        <button
+                            class="flex justify-center items-center gap-2 px-5 py-3 text-[#00FF88] text-base font-semibold border border-[#00FF88] rounded-full 
                             transition-all duration-300 ease-in-out hover:bg-[#00FF88]/10 hover:shadow-[0_0_15px_rgba(0,255,136,0.5)] active:scale-95 cursor-pointer">
                             <div><img src="./assets/message.png" alt=""></div> Subscribe
                         </button>
@@ -80,7 +83,7 @@
 
 
     <main>
-        <section class="About px-[200px] pt-[50px] pb-[120px] bg-[#1A0B2E]">
+        <section class="About px-auto pt-[50px] pb-[120px] bg-[#1A0B2E]">
 
             <div class="para flex flex-col items-center justify-center text-center gap-4  mx-[200px] mb-20">
                 <h1 class="text-[48px] text-[#ffffff] font-bold">About The Podcast</h1>
@@ -117,7 +120,7 @@
         </section>
 
 
-        <section class="choose px-[200px] py-[120px] bg-[#230E3D] flex flex-col gap-10">
+        <section class="choose px-auto py-[120px] bg-[#230E3D] flex flex-col gap-10">
 
             <h1 class="text-[48px] text-[#ffffff] font-bold text-center ">Why Choose TechWave</h1>
             <div class="features_card grid grid-cols-3 grid-rows-3 gap-[30px]">
@@ -131,21 +134,24 @@
                         recording equipment and expert audio engineering. Every episode is mastered for optimal
                         listening across all devices and platforms.</p>
                 </div>
-                <div class="card col-span-2 p-10 bg-[rgba(53,17,101,0.4)] rounded-[40px]  flex flex-col gap-4 hover-wiggle">
+                <div
+                    class="card col-span-2 p-10 bg-[rgba(53,17,101,0.4)] rounded-[40px]  flex flex-col gap-4 hover-wiggle">
                     <div class="w-[60px] h-[60px] flex justify-center items-center"><img src="./assets/device.png"
                             alt=""></div>
                     <h3 class="text-[24px] font-bold text-[#ffffff]">Mobile Friendly</h3>
                     <p class="text-base text-[#ffffff94]">Listen on the go with seamless mobile experience and offline
                         downloads./p>
                 </div>
-                <div class="card col-span-2 p-10 bg-[rgba(53,17,101,0.4)] rounded-[40px]  flex flex-col gap-4 hover-wiggle">
+                <div
+                    class="card col-span-2 p-10 bg-[rgba(53,17,101,0.4)] rounded-[40px]  flex flex-col gap-4 hover-wiggle">
                     <div class="w-[60px] h-[60px] flex justify-center items-center"><img src="./assets/location.png"
                             alt=""></div>
                     <h3 class="text-[24px] font-bold text-[#ffffff]">Global Community</h3>
                     <p class="text-base text-[#ffffff94]">Connect with tech enthusiasts from over 120 countries
                         worldwide.</p>
                 </div>
-                <div class="card col-span-2 p-10 bg-[rgba(53,17,101,0.4)] rounded-[40px]  flex flex-col gap-4 hover-wiggle">
+                <div
+                    class="card col-span-2 p-10 bg-[rgba(53,17,101,0.4)] rounded-[40px]  flex flex-col gap-4 hover-wiggle">
                     <div class="w-[60px] h-[60px] flex justify-center items-center"><img src="./assets/zap-fast.png"
                             alt=""></div>
                     <h3 class="text-[24px] font-bold text-[#ffffff]">Exclusive Interviews</h3>
